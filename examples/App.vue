@@ -1,43 +1,72 @@
 <template>
   <div id="app">
+    <!-- <r-alert
+      type="success"
+      center
+      allWidth=30
+      allHeight=30
+      position=absolute
+      left=35
+      top=100
+      show-icon>
+    >
+      <template v-slot:title>
+        <h1>I`m Alert</h1>
+      </template>
+      <template v-slot>
+        <h2>alert is niubi!!</h2>
+        <textarea name="" id="" cols="20" rows="4">wudi</textarea>
+      </template>
+    </r-alert> -->
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-     
+      <router-link to="/about">About</router-link>  
+      <router-view/>
+      <!-- <r-button type="success">button</r-button> -->
     </div>
-     <r-button type="primary">button</r-button>
-     <r-alert></r-alert>
-    <router-view/>
   </div>
 </template>
 
 <script>
-  // import { use } from 'main/locale';
-  // import zhLocale from 'main/locale/lang/zh-CN';
-  // import enLocale from 'main/locale/lang/en';
-  // import esLocale from 'main/locale/lang/es';
-  // import frLocale from 'main/locale/lang/fr';
-
-  // const lang = location.hash.replace('#', '').split('/')[1] || 'zh-CN';
-  // const localize = lang => {
-  //   switch (lang) {
-  //     case 'zh-CN':
-  //       use(zhLocale);
-  //       break;
-  //     case 'es':
-  //       use(esLocale);
-  //       break;
-  //     case 'fr-FR':
-  //       use(frLocale);
-  //       break;
-  //     default:
-  //       use(enLocale);
-  //   }
-  // };
-  // localize(lang);
-
   export default {
     name: 'app',
+    methods:{
+      setMessage(i){
+          // console.log("window:",window)
+          // console.log("this:",this)
+          this.$message({
+            message: `恭喜你，这是${i+1}条成功消息`,
+            type: 'success',
+            offset:40,
+            duration:0,
+            itemHeight:20,
+            itemSpacing:20
+          });
+      }
+    },
+    mounted(){
+      this.$message({
+          message: `恭喜你，成功发送消息`,
+          type: 'error', 
+          offset:40,
+       duration:2000
+        });
+      
+      for(let i=0;i<3;i++){
+      this.setMessage(i);
+        // await setTimeout(1000)
+      }
+      // this.$alert('这是一段内容', '标题名称', {
+      //   confirmButtonText: '确定',
+      //   callback: action => {
+      //     this.$message({
+      //       type: 'info',
+      //       message: `action: ${ action }`
+      //     });
+      //   }
+      // });
+
+    }
 
   };
 </script>

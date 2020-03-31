@@ -2,6 +2,7 @@
 A vuejs ui library for web
 
 # pc
+cd d:/ComponentWarehouse/VueCmp/PC/pc
 
 ## Project setup
 ```
