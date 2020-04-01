@@ -4,36 +4,20 @@ A vuejs ui library for web
 # pc
 cd d:/ComponentWarehouse/VueCmp/PC/pc
 
-## Project setup
+## 测试
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+yarn serve
 ```
 
-### Compiles and minifies for production
+### 构建测试文档
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
+yarn run build
 ```
 
-### Lints and fixes files
+### 编译组件库
 ```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
+yarn lib
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
 
