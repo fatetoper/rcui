@@ -1,12 +1,12 @@
 {
-  "name": "ant-design-vue",
-  "version": "1.6.5",
-  "title": "Ant Design Vue",
+  "name": "rcui",
+  "version": "0.1.1",
+  "title": "Rui Chi",
   "description": "An enterprise-class UI design language and Vue-based implementation",
   "keywords": [
-    "ant",
-    "design",
-    "antd",
+    "ruichi",
+    "rcui",
+    "ruichiui",
     "vue",
     "vueComponent",
     "component",
@@ -46,13 +46,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vueComponent/ant-design-vue.git"
+    "url": "git+https://github.com/fatetoper/rcui.git"
   },
   "license": "MIT",
+  "private": false,
   "bugs": {
-    "url": "https://github.com/vueComponent/ant-design-vue/issues"
+    "url": "https://github.com/fatetoper/rcui/issues"
   },
-  "homepage": "https://www.antdv.com/",
+  "homepage": "https://github.com/fatetoper/rcui",
   "peerDependencies": {
     "vue": ">=2.6.0",
     "vue-template-compiler": ">=2.6.0"
